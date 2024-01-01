@@ -115,3 +115,11 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+PACKER_FILE=~/.local/share/nvim/site/pack/packer/start/packer.nvim 
+
+if test -f "PACKER_FILE"; then
+	echo "Packer exists"
+else
+	git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim 
+fi
