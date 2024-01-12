@@ -1,4 +1,5 @@
-require('bruce')
+require("bruce")
+require("bruce.lazy")
 
 vim.g.clipboard = {
 	name = "win32yank-wsl",
@@ -12,4 +13,3 @@ vim.g.clipboard = {
 	},
 	cache_enable = 0,
 }
-

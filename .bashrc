@@ -1,7 +1,3 @@
-sudo apt-get update
-
-sudo apt-get install -y npm
-
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -121,20 +117,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-NVIM_FILE=$XDG_CONFIG_HOME/nvim 
-
-if [ $(dpkg-query -W -f='${Status}' neovim 2>/dev/null | grep -c "ok installed") -eq 0 ]
-then
-	sudo add-apt-repository ppa:neovim-ppa/unstable
-	sudo apt-get update
-	sudo apt-get install -y neovim
-fi
-
-PACKER_FILE=~/.local/share/nvim/site/pack/packer/start/packer.nvim 
-if test -d "$PACKER_FILE"; then
-	echo "Packer exists"
-else
-	git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim 
-fi
+source ./.bashrc_dependencies.sh
 

@@ -1,5 +1,5 @@
 .*
 nvim.appimage
-sqauashfs-root/
-vimfiles/
+sqauashfs-root
+vimfiles
 win32yank.exe
