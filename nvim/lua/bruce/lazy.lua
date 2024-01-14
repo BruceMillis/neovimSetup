@@ -35,5 +35,13 @@ require("lazy").setup({
     "neovim/nvim-lspconfig",
     "williamboman/mason-lspconfig",
     "eandrju/cellular-automaton.nvim",
-    "williamboman/mason.nvim"
+    "williamboman/mason.nvim",
+    "simrat39/rust-tools.nvim",
+    'hrsh7th/cmp-nvim-lua',
+    'hrsh7th/cmp-nvim-lsp-signature-help',
+    'hrsh7th/cmp-vsnip',                             
+    'hrsh7th/cmp-path',                             
+    'hrsh7th/cmp-buffer',                            
+    "BurntSushi/ripgrep",
+    'hrsh7th/vim-vsnip'
 })
